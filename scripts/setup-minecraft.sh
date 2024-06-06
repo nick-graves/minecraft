@@ -2,7 +2,7 @@
 
 # *** INSERT SERVER DOWNLOAD URL BELOW ***
 # Do not add any spaces between your link and the "=", otherwise it won't work. EG: MINECRAFTSERVERURL=https://urlexample
-MINECRAFTSERVERURL= 'https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar'
+MINECRAFTSERVERURL='https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar'
 
 # Download Java
 sudo yum install -y java-17-amazon-corretto-headless
