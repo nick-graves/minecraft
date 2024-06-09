@@ -225,7 +225,7 @@ fi
 # End script
 ```
 
-The ```createKey.sh``` script creates a new AWS key pair. It downloads and changes the permissions of your public key along with storing the name/path to forward to the ```updateVariables.sh``` script. The script is set up to name the key ```test.pem``` If you would like to change that simply edit this line of code ```KEY_NAME="test" # Replace with your desired key name```. That code can be seen here
+The ```createKey.sh``` script creates a new AWS key pair. It downloads and changes the permissions of your public key along with storing the name/path to forward to the ```updateVariables.sh``` script. The script is set up to name the key ```test.pem```. If you would like to change that simply edit this line of code ```KEY_NAME="test" # Replace with your desired key name```. That code can be seen here
 ```
 #!/bin/bash
 
