@@ -28,6 +28,13 @@ To execute this you will need to update your local copy of your AWS credentials.
 Now that our AWS credentials are correct it is time to execute our scripts. This will create a new key pair and update the terraform files with the new key. It will both create your EC2 instance on which the server will be hosted and download all necessary files to the EC2 instance for hosting. 
 1. **In the home directory of this repo you will find a script called ```deploy.sh```. As the name would imply this file is responsible for deploying the server. Run the script with this command ```bash deploy.sh```. Just like that you are done all you need to do now is sit back and wait**
     - NOTE: If you run into any errors with the execution of this script try this command to ensure you have proper perms ```chmod +x deploy.sh```
+    - SECOND NOTE: If you still run into errors (especially you Windows users) run the following commands
+      ```
+      choco install dos2unix
+      dos2unix deploy.sh
+      dos2unix ./scripts/updateVariables.sh
+      dos2unix ./scripts/createKey.sh
+      ```
 2. **At the end of the script running you should see the following**
 ```
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
